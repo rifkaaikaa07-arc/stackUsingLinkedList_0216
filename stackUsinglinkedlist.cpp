@@ -38,5 +38,13 @@ class stack
     // pop operation: Remove the topmost element from the stuck
     void pop()
     {
+        if (isEmpty())
+        {
+            cout << "Stack is Empty." << endl;
+        }
+
+        node *temp = top;
+        top = top->next;
+        cout << "Popped value : " << top->data << endl;
     }
 };
