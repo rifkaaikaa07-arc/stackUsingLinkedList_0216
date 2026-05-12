@@ -47,4 +47,9 @@ class stack
         top = top->next;
         cout << "Popped value : " << top->data << endl;
     }
+
+     // peel/top operation: Retrive the value of the topset element witchout removing
+    void peek()
+    {
+    } 
 };
