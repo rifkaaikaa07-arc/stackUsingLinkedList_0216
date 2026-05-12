@@ -51,5 +51,19 @@ class stack
      // peel/top operation: Retrive the value of the topset element witchout removing
     void peek()
     {
+        if (top == NULL)
+        {
+            cout << "List is empty." << endl;
+        }
+        else
+        {
+            node *current = top;
+            while (current != NULL)
+            {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
+            cout << endl;
+        }
     } 
 };
